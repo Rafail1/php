@@ -1,0 +1,12 @@
+<button class="btn btn-default hide_badges">Hide badges</button>
+<button class="btn btn-default show_badges">Show badges</button>
+<ul class="list-group js-words">
+    {{#tplData}}
+    <li data-id="{{id}}" class="list-group-item {{#syn}}synonims {{/syn}}hoverable clickable{{#active}} active{{/active}}">
+        <span class="name">{{name}}</span>
+        {{#syn}}<span class="btn btn-default editSyn">show Synonims</span>{{/syn}}
+        <span class="badge">{{val}}</span>
+        <span class="badge">{{pc}}</span>
+    </li>
+    {{/tplData}}
+</ul>
