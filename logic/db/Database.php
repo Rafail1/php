@@ -12,7 +12,7 @@ class Database {
         $opt = [\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
             \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC
         ];
-        $this->pdo = new \PDO($dsn, "cattest_raf", "5033655", $opt);
+        $this->pdo = new \PDO($dsn, "******", "*****", $opt);
        
     }
     public static function getInstance() {
